@@ -1,8 +1,8 @@
 # GPS_Tracker_Gopro_ESP8266
 tracker gps + commande wifi gopro - esp8266
 
-balise GPS de signalisation basée sur https://github.com/dev-fred/GPS_Tracker_ESP8266
-Commande gopro basée sur https://github.com/aster94/GoProControl
+* balise GPS de signalisation basée sur https://github.com/dev-fred/GPS_Tracker_ESP8266
+* Commande gopro basée sur https://github.com/aster94/GoProControl
 
 Penser à intégrer la bibliothèque de aster94 pour que cela puisse fonctionner.
 Si des problèmes surviennent pour la connection de la gopro, augmenter le MAX_WAIT_TIME dans le settings.h d'aster94 à 5000, ou plus.
@@ -17,7 +17,7 @@ Un délai de 2 secondes (non bloquant, sur timer) est prévu entre deux requête
 
 La led verte (GPS), clignote 1 fois quand la balise trouve un nouveau satellite, ou est en attente de satellites.
 
-Fonctionnement des LEDs:
+# Fonctionnement des LEDs :
 En fonctionnement normal :
   - Gopro activée + fonctionnement normal de la balise GPS : Leds verte et rouge allumées fixes
   - Gopro désactivée + fonctionnement normal de la balise GPS : Led vert allumée, led rouge éteinte
@@ -27,6 +27,10 @@ Si il y a un problème :
   - Led verte clignote: pas assez de satellite, problème sur GPS, ou nouveau satellite trouvé (led verte fixe -> clignote 1 fois -> led verte fixe)
   
   
-Ci dessous un schéma de câblage:
+# Schéma de câblage :
+![alt text](https://github.com/damiendon/GPS_Tracker_Gopro_ESP8266/blob/main/GPS_Tracker_Gopro_ESP8266-SCHEMA.png "schema de cablage")
 
-[https://github.com/damiendon/GPS_Tracker_Gopro_ESP8266/blob/main/GPS_Tracker_Gopro_ESP8266-SCHEMA.png]
+
+# Choix inter radio :
+  - L'inter pour le "trigger" (déclenchement photo / début-arrêt video) doit être un interrupteur monostable, inter ecolage par exemple.
+  - L'inter pour le choix du mode (photo/video) doit être un inter bistable
