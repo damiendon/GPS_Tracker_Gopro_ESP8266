@@ -27,7 +27,7 @@ Si il y a un problème :
 * Led verte clignote: pas assez de satellite, problème sur GPS, ou nouveau satellite trouvé (led verte fixe -> clignote 1 fois -> led verte fixe)
 
 # Schéma de câblage :
-![alt text](https://github.com/damiendon/GPS_Tracker_Gopro_ESP8266/blob/main/GPS_Tracker_Gopro_ESP8266-SCHEMA.png "schema de cablage")
+![alt text](https://github.com/damiendon/GPS_Tracker_Gopro_ESP8266/blob/main/GPS_Tracker_Gopro_ESP8266-SCHEMA_1.png "schema de cablage")
 
 # Choix inter radio :
   - L'inter pour le "trigger" (déclenchement photo / début-arrêt video) doit être un interrupteur monostable, inter ecolage par exemple.
