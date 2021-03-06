@@ -1,3 +1,5 @@
+# NOTE: La balise fonctionne mais pas sur le bon canal wifi pour la réglementation française. elle peut donc etre utilisée, pour suivre son appareil, mais pas pour respecter la réglementation d'identification française. Une autre version est en cours de développement embarquant un deuxième ESP, qui fonctionnera pour la réglementation.
+
 # GPS_Tracker_Gopro_ESP8266
 tracker gps + commande wifi gopro - esp8266
 
